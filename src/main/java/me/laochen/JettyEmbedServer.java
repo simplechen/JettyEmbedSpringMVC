@@ -27,7 +27,6 @@ import org.slf4j.LoggerFactory;
 public class JettyEmbedServer {
 	private static Logger logger = LoggerFactory.getLogger(JettyEmbedServer.class);
 	private static final String LOG_PATH = "./logs/front/yyyy_mm_dd.log";
-//	private static final String WEB_XML = "META-INF/WEB-INF/web.xml";
 	private static final String WEB_XML = "META-INF/WEB-INF/web.xml";
     private static final String CLASS_ONLY_AVAILABLE_IN_IDE = "me.laochen";
     private static final String PROJECT_RELATIVE_PATH_TO_WEBAPP = "src/main/webapp";
@@ -45,15 +44,6 @@ public class JettyEmbedServer {
 		this.port = port;
 	}
 	
-	/**
-	 * 运行程序
-	 * @throws Exception
-	 */
-	public void run() throws Exception{
-		server.start();
-		server.join();
-		logger.info("jetty webserver is runing...");
-	}
 
 	public void start() throws Exception
 	{

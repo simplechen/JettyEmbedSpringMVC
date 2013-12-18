@@ -31,7 +31,7 @@
 	<mvc:annotation-driven />
 	
 	<!-- 自动扫描控制层包 -->
-	<context:component-scan base-package="me.laoche">
+	<context:component-scan base-package="me.laochen">
 		<context:include-filter type="annotation" expression="org.springframework.stereotype.Controller" />
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Service" />
 	</context:component-scan>
